@@ -50,7 +50,7 @@ Scoring criteria:
 - 20%: Explain the solved exercise in the README, in the best possible way
 
 ## Changes
-1. We have added a double \\ where the "." so the email is printed correctly.
+1. I have added a double \\ where the "." so the email is printed correctly.
 2. The bound of the random generater was 2. So, the last case (the one where the random number takes 2 as a value) could never be reached. We were generating numbers between 0 and 1. So, we have to put 3 as a bound so we can reach 2. 
 3. In every case, we were creating the variable word with a determined letter. Nevertheless, this letter was passed through the Stringbuffer as a char instead of a String because the letter was passed through a simple quote **''** instead of a double **""**. That is why, the letter was never added to the email.
 4. Finally, we were going through every single case because we were missing the break statement. By adding the break in every single case, whenever we entry in one case, the program reads the break statement and exit the switch without going to the rest of cases. 
